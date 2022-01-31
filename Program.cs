@@ -442,7 +442,6 @@ namespace Assignment_1_Spring_22
                 }
                 for (int i = 0; i < bulls_string.Length; i++)//copying content from char array to string
                 {
-                    //Console.Write(correctOrder[i]);
                     restoredString += correctOrder[i];
                 }
                 return "null";
@@ -519,13 +518,13 @@ namespace Assignment_1_Spring_22
                         chPosition = counter;
                     }
 
-                    bullsString6Array[counter] = c;
-                    counter++;
+                    bullsString6Array[counter] = c; //copying content in array
+                    counter++;// incrementing the counter
                 }
                 for (int i = 0, j = chPosition; i <= (chPosition / 2 + chPosition % 2) && j > i; i++, j--)
                 //Loop to reverse the contents of character array 
                 {
-
+                    //swap logic using third variable
                     swapHelp = bullsString6Array[i];
                     bullsString6Array[i] = bullsString6Array[j];
                     bullsString6Array[j] = swapHelp;
